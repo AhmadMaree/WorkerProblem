@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WorkerProblem</string>
+    <string name="email">Email</string>
+    <string name="iconimage">IconImage</string>
+    <string name="iconhappy">IconHappy</string>
+    <string name="User_existed">UserExisted</string>
+    <string name="loginfalied">Login Failed</string>
+    <string name="EnterValidData">Must Fill the Text</string>
+    <string name="LogIn_Faild">Failed</string>
+    <string name="iconshow">Icon Show</string>
+    <string name="title_menu">Log out</string>
+    
+    
+    
+</resources>
