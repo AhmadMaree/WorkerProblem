@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
     public static String COFFE_MACHIEN = "Coffee Machine";
     public static String MECHANICAL = "Mechanical";
     public static String POLICE = "police";
+    public static String COOLING_AIR_CONDITION = "Cooling and Air Conditioning";
     public static String Selectedlist = "";
 
 
@@ -85,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
                     if (listvalueCheckBox.isEmpty()) {
                         listvalueCheckBox.add(MECHANICAL);
                         listvalueCheckBox.add(POLICE);
+                        listvalueCheckBox.add(COOLING_AIR_CONDITION);
                         listvalueCheckBox.add(COFFE_MACHIEN);
                         listvalueCheckBox.add(NETWORK);
                         listvalueCheckBox.add(PLUMBER);

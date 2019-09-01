@@ -9,6 +9,16 @@
     <string name="LogIn_Faild">Failed</string>
     <string name="iconshow">Icon Show</string>
     <string name="title_menu">Log out</string>
+    <string name="chooseimage">Choose image</string>
+    <string name="massege">Massege</string>
+    <string name="send">Send</string>
+    <string name="failedupload">FailedUpload</string>
+    <string name="message">message</string>
+    <string name="ImageName">ImageName</string>
+    <string name="imageUrl">imageUrl</string>
+    <string name="users">users</string>
+    <string name="emails">email</string>
+    <string name="SpecialistType">SpecialistType</string>
     
     
     
