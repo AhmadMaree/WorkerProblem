@@ -62,8 +62,8 @@ public class ViewSnapActivity extends AppCompatActivity {
         if (intent.hasExtra(getString(R.string.imageUrl))) {
             imageUrl = intent.getStringExtra(getString(R.string.imageUrl));
         }
-        if (intent.hasExtra("from")) {
-            from = intent.getStringExtra("from");
+        if (intent.hasExtra(getString(R.string.from))) {
+            from = intent.getStringExtra(getString(R.string.from));
         }
         if (intent.hasExtra(getString(R.string.SnapKey))) {
             SnapKey = intent.getStringExtra(getString(R.string.SnapKey));
@@ -74,8 +74,13 @@ public class ViewSnapActivity extends AppCompatActivity {
         if (intent.hasExtra(getString(R.string.ImageName))) {
             ImageName = intent.getStringExtra(getString(R.string.ImageName));
         }
+        if(savedInstanceState!=null){
+            from=savedInstanceState.getString(getString(R.string.from));
+            message=savedInstanceState.getString(getString(R.string.message));
+            imageUrl=savedInstanceState.getString(getString(R.string.imageUrl));
+        }
 
-        txtMessage.setText(from + ":" + intent.getStringExtra(getString(R.string.Message)));
+        txtMessage.setText(from + ":" + message);
         didYouSolveIt.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
             @Override
@@ -137,5 +142,13 @@ public class ViewSnapActivity extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
 
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString(getString(R.string.from),from);
+        outState.putString(getString(R.string.message),message);
+        outState.putString(getString(R.string.imageUrl),imageUrl);
     }
 }

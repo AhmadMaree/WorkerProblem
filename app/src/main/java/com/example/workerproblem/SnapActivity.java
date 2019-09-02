@@ -12,6 +12,8 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 
@@ -34,7 +36,7 @@ public class SnapActivity extends AppCompatActivity {
     ListView snapsListView;
     ArrayList<String> emails = new ArrayList<String>();
     ArrayList<DataSnapshot> snaps = new ArrayList<>();
-
+    AdView adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,10 @@ public class SnapActivity extends AppCompatActivity {
         setContentView(R.layout.snap_activity);
 
         ButterKnife.bind(this);
+
+        adView=findViewById(R.id.adView);
+        AdRequest adRequest=new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+        adView.loadAd(adRequest);
         btnShowAllSnaps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
