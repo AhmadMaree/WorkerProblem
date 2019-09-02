@@ -6,18 +6,20 @@
     android:layout_height="match_parent"
     android:background="@drawable/grdient"
     tools:context=".MainActivity">
+
     <ImageView
-        android:contentDescription="@string/iconimage"
-        android:layout_width="208dp"
-        android:layout_height="175dp"
+        android:layout_width="163dp"
+        android:layout_height="140dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/workerimage"
+        android:contentDescription="@string/icondiscover"
         android:paddingLeft="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,7 +38,7 @@
         app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.316"
+        app:layout_constraintVertical_bias="0.368"
 
         />
 
@@ -65,7 +67,7 @@
         android:layout_marginLeft="104dp"
         android:layout_marginEnd="140dp"
         android:layout_marginRight="140dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="116dp"
         android:background="@color/colorAccent"
         android:text="SignUp"
         android:textColor="@color/grey"
@@ -99,14 +101,14 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="52dp"
         android:clickable="true"
         android:text="Already Registed?"
         android:textColor="@color/Dark"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toEndOf="@+id/btnGo" />
 
     <Spinner

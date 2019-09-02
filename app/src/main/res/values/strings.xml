@@ -1,25 +1,28 @@
 <resources>
     <string name="app_name">WorkerProblem</string>
-    <string name="email">Email</string>
-    <string name="iconimage">IconImage</string>
-    <string name="iconhappy">IconHappy</string>
-    <string name="User_existed">UserExisted</string>
-    <string name="loginfalied">Login Failed</string>
-    <string name="EnterValidData">Must Fill the Text</string>
-    <string name="LogIn_Faild">Failed</string>
-    <string name="iconshow">Icon Show</string>
-    <string name="title_menu">Log out</string>
-    <string name="chooseimage">Choose image</string>
-    <string name="massege">Massege</string>
-    <string name="send">Send</string>
-    <string name="failedupload">FailedUpload</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="Log_ut">Logout</string>
+    <string name="email">email</string>
+    <string name="SpecialistType">SpecialistType</string>
+    <string name="loginfalied">login falied try again</string>
+    <string name="The_User_Existsd">The User Existsd</string>
+    <string name="from">from</string>
     <string name="message">message</string>
     <string name="ImageName">ImageName</string>
+    <string name="LogIn_Faild">LogIn Faild</string>
+    <string name="Requiered_Data">Please Enter The Requiered Data</string>
     <string name="imageUrl">imageUrl</string>
+    <string name="SnapKey">SnapKey</string>
     <string name="users">users</string>
-    <string name="emails">email</string>
-    <string name="SpecialistType">SpecialistType</string>
-    
-    
-    
+    <string name="images">images</string>
+    <string name="Message">Message</string>
+    <string name="here_is_your_issue_go_ahead">Here Is Your Issue, Go Ahead</string>
+    <string name="selectedimage">SelectedImage</string>
+    <string name="iconcomplaines">IconComplaines</string>
+    <string name="iconhappy">IconHappy</string>
+    <string name="icondiscover">IconDiscover</string>
+    <string name="therecievedimage">TheRecievedImage</string>
+    <string name="failedupload">Failedupload</string>
+
 </resources>

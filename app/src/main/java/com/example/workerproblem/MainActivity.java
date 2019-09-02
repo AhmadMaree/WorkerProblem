@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
     private void setUesr(final String email, final String password) {
         if(email.isEmpty() || password.isEmpty()){
 
-            Toast.makeText(MainActivity.this,R.string.EnterValidData,
+            Toast.makeText(MainActivity.this,R.string.Requiered_Data,
                     Toast.LENGTH_SHORT).show();
         }else{
             mAuth.signInWithEmailAndPassword(email,password)
@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful()){
-                                    Toast.makeText(MainActivity.this,R.string.User_existed,Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(MainActivity.this,R.string.The_User_Existsd  ,Toast.LENGTH_SHORT).show();
                                 }else {
                                     mAuth.createUserWithEmailAndPassword(email,password)
                                             .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {

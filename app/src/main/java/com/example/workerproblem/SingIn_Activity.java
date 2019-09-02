@@ -83,7 +83,7 @@ public class SingIn_Activity extends AppCompatActivity {
 
                     }
                 } else
-                    Toast.makeText(getApplicationContext(), R.string.EnterValidData, Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.Requiered_Data, Toast.LENGTH_LONG).show();
 
 
             }

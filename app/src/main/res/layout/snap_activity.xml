@@ -16,7 +16,7 @@
 
         <ImageView
             android:layout_width="184dp"
-            android:contentDescription="@string/iconshow"
+            android:contentDescription="@string/icondiscover"
             android:layout_height="161dp"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"

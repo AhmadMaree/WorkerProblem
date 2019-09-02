@@ -98,8 +98,9 @@ public class CreateSnaps extends AppCompatActivity {
 
     private void toActivityData() {
 
+
         final Intent intent=new Intent(getApplicationContext(),ChooesActivity.class);
-         intent.putExtra(getString(R.string.imageUrl), downurl.toString());
+        intent.putExtra(getString(R.string.imageUrl), downurl.toString());
         intent.putExtra(getString(R.string.ImageName), imageName);
         intent.putExtra(getString(R.string.message), Message);
         startActivity(intent);
