@@ -23,6 +23,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.423"
+        android:contentDescription="@string/Imageselcted"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
@@ -35,8 +36,9 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="380dp"
         android:background="@color/colorAccent"
-        android:text="choose image"
+        android:text="@string/chooseimage"
         android:textColor="@color/white"
+        android:transitionName="@string/trans1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -54,7 +56,7 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Message"
+        android:text="@string/Message"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -73,7 +75,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/colorAccent"
-        android:text="Send"
+        android:text="@string/SendButton"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

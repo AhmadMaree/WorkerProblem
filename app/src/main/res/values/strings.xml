@@ -24,5 +24,22 @@
     <string name="icondiscover">IconDiscover</string>
     <string name="therecievedimage">TheRecievedImage</string>
     <string name="failedupload">Failedupload</string>
+    <string name="filedu">FaildUpload no image</string>
+    <string name="Imageselcted">ImageFromGallary</string>
+    <string name="chooseimage">choose image</string>
+    <string name="Messagelayout">Massege</string>
+    <string name="SendButton">Send Button</string>
+    <string name="Emailhint">Email</string>
+    <string name="SignIn">Sign In</string>
+    <string name="YouWanna">You Wanna Register ?</string>
+    <string name="password">Password</string>
+    <string name="singup">SingUp</string>
+    <string name="areyou">Are You Specialist Worker</string>
+    <string name="registed">Already Registed?</string>
+    <string name="creatsnap">Create Snap</string>
+    <string name="recievied">Show Recieved Snaps</string>
+    <string name="textview">SomeText</string>
+    <string name="ask">Did You Solve It ?</string>
+    <string name="trans1">trans</string>
 
 </resources>

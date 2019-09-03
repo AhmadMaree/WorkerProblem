@@ -61,32 +61,36 @@ public class CreateSnaps extends AppCompatActivity {
         sendbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            Bitmap bitmap=((BitmapDrawable)imageView.getDrawable()).getBitmap();
-            ByteArrayOutputStream byteArrayOutputStream=new ByteArrayOutputStream();
-            bitmap.compress(Bitmap.CompressFormat.JPEG,100,byteArrayOutputStream);
-            byte[] arbyte=byteArrayOutputStream.toByteArray();
+                if (imageView.isSelected()) {
+                    Bitmap bitmap = ((BitmapDrawable) imageView.getDrawable()).getBitmap();
+                    ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
+                    byte[] arbyte = byteArrayOutputStream.toByteArray();
 
 
-                UploadTask uploadTask= FirebaseStorage.getInstance().getReference().child("images").child(imageName).putBytes(arbyte);
-                uploadTask.addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(CreateSnaps.this,R.string.failedupload,Toast.LENGTH_LONG).show();
-                    }
-                }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                    @Override
-                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                        Message=massege.getText().toString();
-                        taskSnapshot.getMetadata().getReference().getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                            @Override
-                            public void onSuccess(Uri uri) {
-                                downurl=uri;
-                                toActivityData();
-                            }
-                        });
-                    }
-                });
+                    UploadTask uploadTask = FirebaseStorage.getInstance().getReference().child("images").child(imageName).putBytes(arbyte);
+                    uploadTask.addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(CreateSnaps.this, R.string.failedupload, Toast.LENGTH_LONG).show();
+                        }
+                    }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                            Message = massege.getText().toString();
+                            taskSnapshot.getMetadata().getReference().getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                @Override
+                                public void onSuccess(Uri uri) {
+                                    downurl = uri;
+                                    toActivityData();
+                                }
+                            });
+                        }
+                    });
 
+                }else {
+                    Toast.makeText(CreateSnaps.this,R.string.filedu,Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
